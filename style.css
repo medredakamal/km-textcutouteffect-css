@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.km-container {
+  height: 99vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://images.pexels.com/photos/210307/pexels-photo-210307.jpeg?cs=srgb&dl=pexels-pixabay-210307.jpg&fm=jpg&w=1920&h=1280")
+    no-repeat bottom;
+  background-size: cover;
+}
+
+.km-text {
+  background-color: #fff;
+  padding: 40px;
+  mix-blend-mode: screen;
+  font-size: 58px;
+  border-radius: 5px;
+}
+
+.km-medredakamal {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.km-medredakamal img {
+  width: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: 0 4px 0px 7px;
+  mix-blend-mode: none;
+}
+
+/** Med Reda Kamal Author Card */
+.medredakamal__author__card {
+  background-color: #152033;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 2px solid #00d3f9;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.medredakamal__author__card .card__left__side {
+  margin: 10px 0;
+}
+
+.medredakamal__author__card .card__right__side {
+  margin: 10px 0;
+}
+
+.medredakamal__author__card .card__right__side > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medredakamal__author__card .card__left__side {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  flex-wrap: wrap;
+}
+
+.medredakamal__author__card .card__left__side h1 {
+  font-size: 17px;
+  margin: 3px 0 1px 0;
+  color: #fff;
+  font-weight: 800;
+}
+
+.medredakamal__author__card .card__left__side p {
+  font-size: 15px;
+  margin: 0 0 7px 0;
+  color: #fff;
+}
+
+.medredakamal__author__card .card__left__side a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  border: 2px solid #43cfff;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 3px 7px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.medredakamal__author__card .card__left__side a:hover {
+  background-color: #43cfff;
+  border-color: transparent;
+  transform: scale(0.94);
+}
+
+.medredakamal__author__card .card__left__side a > i {
+  margin-right: 5px;
+}
+
+.medredakamal__author__card .medredakamal__image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 35px;
+  margin-right: 10px;
+  border: 2px solid #61c1ff;
+}
+
+.medredakamal__author__card .kamcode__image {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  padding: 12px;
+}
+
+/* Med Reda Kamal : Responsive */
+@media (max-width: 799px) {
+  .medredakamal__author__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
